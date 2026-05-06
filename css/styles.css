@@ -2,6 +2,7 @@
     --primary-color: #E8C183;
     --secondary-color: #000000;
     --text-color: #ffffff;
+    --gray: #D6D6D6;
 }
 
 html,
@@ -10,6 +11,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background: var(--secondary-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 
@@ -79,9 +81,64 @@ body {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: var(--primary-color);
+    letter-spacing: 2px;
 }
 
 .title {
     font-size: 16px;
-    color: #D6D6D6;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.py-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+/* amenities-caption-text */
+.amenities-caption-text {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--gray);
+    text-align: center;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.amenities-caption-text.fade-out {
+    opacity: 0;
+    transform: translateY(6px);
+}
+
+
+/* Default (inactive slides) */
+.amenitiesSwiper .swiper-slide {
+    height: 400px;
+    opacity: 0.5;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Active slide (taller) */
+.amenitiesSwiper .swiper-slide-active {
+    height: 520px;
+    opacity: 1;
+}
+
+/* Side slides */
+.amenitiesSwiper .swiper-slide-prev,
+.amenitiesSwiper .swiper-slide-next {
+    opacity: 0.7;
+}
+
+@media (max-width:768px) {
+    .amenitiesSwiper .swiper-slide {
+        height: 250px;
+    }
+
+    .amenitiesSwiper .swiper-slide-active {
+        height: 350px;
+    }
 }
