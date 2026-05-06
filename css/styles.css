@@ -1,7 +1,7 @@
 :root {
     --primary-color: #E8C183;
     --secondary-color: #000000;
-    --text-color: #ffffff;
+    --text-color: #e4e4e4;
 }
 
 html,
@@ -10,6 +10,14 @@ body {
     font-family: "Montserrat", sans-serif;
     background: var(--secondary-color);
     color: var(--text-color);
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 12px;
+        line-height: 2;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .cinzel-uniquifier {
@@ -30,4 +38,42 @@ body {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: var(--primary-color);
+}
+
+.custom_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+}
+
+@media (min-width: 540px) {
+    .custom_container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 991px) {
+    .custom_container {
+        max-width: 991px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .custom_container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom_container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1320px) {
+    .custom_container {
+        max-width: 1320px;
+    }
 }
