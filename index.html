@@ -7,7 +7,7 @@
     <title>Trump Tower Gurgaon | Luxury Apartments in Sector 65</title>
     <meta name="description"
         content="Explore ultra-luxurious 3 &amp; 4 BHK residences at Trump Tower Gurgaon, Sector 65. World-class amenities, skyline views, and premium lifestyle in the heart of Gurugram.">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +24,8 @@
 
     <!-- Hero section  -->
     <section class="hero w-full h-auto inset-0">
-        <img src="/assets/banner/banner.jpg" class="hidden md:block w-full h-full object-cover" alt="">
-        <img src="/assets/banner/banner-mobile.jpg" class="block md:hidden w-full h-full object-cover" alt="">
+        <img src="assets/banner/banner.jpg" class="hidden md:block w-full h-full object-cover" alt="">
+        <img src="assets/banner/banner-mobile.jpg" class="block md:hidden w-full h-full object-cover min-h-screen" alt="">
     </section>
 
     <!-- About section  -->
@@ -36,7 +36,7 @@
             <div class="video-div w-full">
                 <div class="hidden md:block video_sec relative w-full m-auto max-w-6xl">
                     <div class="relative flex items-center justify-center">
-                        <img src="/assets/about/bg-stick-left.webp" alt="background blob left"
+                        <img src="assets/about/bg-stick-left.webp" alt="background blob left"
                             class="hidden lg:block absolute md:-left-[50%] h-[500px] rotate-180 bottom-0" />
                         <video
                             class="mt-[30px] md:mt-[50px] block h-[250px] md:h-[500px] w-full object-cover rounded-lg"
@@ -44,10 +44,10 @@
                             <source src="/assets/about_us_banner.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <img src="/assets/about/bg-stick-right.webp" alt="background blob right"
+                        <img src="assets/about/bg-stick-right.webp" alt="background blob right"
                             class="hidden lg:block absolute md:-right-[50%] h-[500px] rotate-180 bottom-0" />
                     </div>
-                    <img src="/assets/common/circle_blob.webp" alt="background blob" height="1000" width="1000"
+                    <img src="assets/common/circle_blob.webp" alt="background blob" height="1000" width="1000"
                         class="hidden lg:block absolute circle_blob bottom_blob left-0 w-full z-20 bottom-[-80%] opacity-[0.5]" />
 
                 </div>
@@ -81,12 +81,12 @@
                         Distinctive, yet timeless. Assertive, yet elegant. Because when the name on the door is Trump®,
                         nothing less than the best will do.</p>
 
-                    <button id="view-map-btn" class="cinzel-uniquifier lg:inline-flex hidden uppercase border-y-2 border-[#E8C18399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-[#C7C7C7]">view map</button>
+                    <button onclick="event.preventDefault(); openContactModal();" class="cinzel-uniquifier lg:inline-flex hidden uppercase border-y-2 border-[#E8C18399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-[#C7C7C7]">view map</button>
                 </div>
                 <div class="map ">
-                    <img src="/assets/map/map.webp" alt="">
+                    <img src="assets/map/map.webp" alt="">
                     <div class="w-full flex justify-center mt-10">
-                        <button id="view-map-btn-mobile"
+                        <button onclick="event.preventDefault(); openContactModal();"
                             class="cinzel-uniquifier inline-flex md:hidden jutify-center uppercase border-y-2 border-[#E8C18399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-[#C7C7C7]">view
                             map</button>
                     </div>
@@ -98,7 +98,7 @@
     <!-- About us Section  -->
     <section class="aboutus py-[3rem] md:py-[6rem] relative building_blob " ref={aboutRef}>
         <div class="custom_container relative">
-            <img src="/assets/aboutus/circle_blob.webp" alt="background blob" height={800} width={800}
+            <img src="assets/aboutus/circle_blob.webp" alt="background blob" height={800} width={800}
                 class='absolute hidden md:block circle_blob bottom_blob lg:left-[48%]  lg:w-[90%] translate-x-[-50%] lg:top-[-100%] lg:opacity-[0.3]' />
 
             <div class="grid lg:grid-cols-9 gap-x-12 gap-y-6 items-center">
@@ -119,10 +119,10 @@
                     </p>
                 </div>
                 <div class="col-span-3">
-                    <img src="/assets/aboutus/center_building.webp" alt="Building"
+                    <img src="assets/aboutus/center_building.webp" alt="Building"
                         class="w-full h-full relative building_create opacity-100" height={1800} width={2200} />
                 </div>
-                <img src="/assets/aboutus/right_building.svg" alt="right building"
+                <img src="assets/aboutus/right_building.svg" alt="right building"
                     class="w-[250px] absolute right-[-100px] bottom-[0]  opacity-100" height={1800} width={2200} />
 
                 <div class="col-span-3 right_content lg:pr-[30px] mt-auto lg:pb-[80px]">
@@ -179,12 +179,12 @@
 
     <!-- Stunnig Interiors  -->
     <section class="relative py-[3rem] md:py-[6rem] overflow-hidden">
-        <img src="/assets/common/left_building_blob.svg" alt="building blob" height="800" width="800"
+        <img src="assets/common/left_building_blob.svg" alt="building blob" height="800" width="800"
             class="lg:block hidden absolute  circle_blob bottom_blob left-0 bottom-[-80px] w-[38%]" />
         <section class="relative lg:px-0 flex flex-col justify-center md:place-items-center">
-            <img src="/assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
+            <img src="assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
                 class="lg:block hidden absolute  circle_blob bottom_blob left-[-50%] w-[100%] top-[-60%] opacity-[0.3]" />
-            <img src="/assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
+            <img src="assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
                 class="lg:block hidden absolute  circle_blob bottom_blob right-[-48%] w-[90%] top-[-60%] opacity-[0.3]" />
             <div>
                 <div class="heading_container col-span-2 text-center">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="lg:grid lg:grid-cols-12 gap-10 lg:mt-[60px] mt-[30px] lg:w-[90%] lg:ml-auto relative">
                     <div class="lg:col-span-4 col-span-12 lg:text-center m-auto px-[30px]">
-                        <img src="/assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
+                        <img src="assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
                             class="lg:hidden block absolute left-0 top-[-297px] opacity-[.4] w-full w-[38%]" />
                         <p class="mb-10 text-center">
                             Step into the world of Trump®, where every detail speaks of powerful design and timeless
@@ -203,6 +203,7 @@
                             curated for the elite, blending legendary craftsmanship with priceless artistry.
                         </p>
                         <button
+                        onclick="event.preventDefault(); openContactModal();"
                             class="cinzel-uniquifier lg:inline-block hidden uppercase border-y-2 border-[#E8C18399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-[#C7C7C7]">View
                             More</button>
                     </div>
@@ -215,7 +216,7 @@
                                             class="w-full mx-0 ml-0 mx-auto rounded-[6px] mb-[50px] overflow-hidden">
                                             <div class="w-full">
                                                 <img class="w-full md:h-[350px] h-[250px] rounded-[6px] object-cover"
-                                                    src="/assets/interiors/slider_one.webp" alt="Slide 0" width="1000"
+                                                    src="assets/interiors/slider_one.webp" alt="Slide 0" width="1000"
                                                     height="667" />
                                             </div>
                                             <figcaption
@@ -228,7 +229,7 @@
                                             class="w-full mx-0 ml-0 mx-auto rounded-[6px] mb-[50px] overflow-hidden">
                                             <div class="w-full">
                                                 <img class="w-full md:h-[350px] h-[250px] rounded-[6px] object-cover"
-                                                    src="/assets/interiors/slider_two.webp" alt="Slide 1" width="1000"
+                                                    src="assets/interiors/slider_two.webp" alt="Slide 1" width="1000"
                                                     height="667" />
                                             </div>
                                             <figcaption
@@ -241,7 +242,7 @@
                                             class="w-full mx-0 ml-0 mx-auto rounded-[6px] mb-[50px] overflow-hidden">
                                             <div class="w-full">
                                                 <img class="w-full md:h-[350px] h-[250px] rounded-[6px] object-cover"
-                                                    src="/assets/interiors/slider_three.webp" alt="Slide 2" width="1000"
+                                                    src="assets/interiors/slider_three.webp" alt="Slide 2" width="1000"
                                                     height="667" />
                                             </div>
                                             <figcaption
@@ -254,7 +255,7 @@
                                             class="w-full mx-0 ml-0 mx-auto rounded-[6px] mb-[50px] overflow-hidden">
                                             <div class="w-full">
                                                 <img class="w-full md:h-[350px] h-[250px] rounded-[6px] object-cover"
-                                                    src="/assets/interiors/slider_five.webp" alt="Slide 3" width="1000"
+                                                    src="assets/interiors/slider_five.webp" alt="Slide 3" width="1000"
                                                     height="667" />
                                             </div>
                                             <figcaption
@@ -267,7 +268,7 @@
                                             class="w-full mx-0 ml-0 mx-auto rounded-[6px] mb-[50px] overflow-hidden">
                                             <div class="w-full">
                                                 <img class="w-full md:h-[350px] h-[250px] rounded-[6px] object-cover"
-                                                    src="/assets/interiors/slider_six.webp" alt="Slide 4" width="1000"
+                                                    src="assets/interiors/slider_six.webp" alt="Slide 4" width="1000"
                                                     height="667" />
                                             </div>
                                             <figcaption
@@ -303,7 +304,7 @@
     </section>
 
 
-    <div class="carousel-wrapper py-section relative" style="background: url(/assets/am/amenities_texture.jpg) center;">
+    <div class="carousel-wrapper py-section relative" style="background: url(assets/am/amenities_texture.jpg) center;">
         <div class="custom_container space-y-6 text-center">
             <span class="block title">world-class</span>
             <h4 class="cinzel-uniquifier heading">Amenities</h4>
@@ -315,47 +316,47 @@
 
                 <!-- Slide 1 -->
                 <div class="swiper-slide overflow-hidden rounded-lg" data-caption="Trump® Tower, Jeddah">
-                    <img src="/assets/am/meeting_room.webp"
+                    <img src="assets/am/meeting_room.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® Tower, Jeddah" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg"
                     data-caption="Albemarle Estate at Trump® Winery, Charlottesville">
-                    <img src="/assets/am/billiard_room.webp"
+                    <img src="assets/am/billiard_room.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Albemarle Estate at Trump® Winery, Charlottesville" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg" data-caption="Trump® National Doral, Miami">
-                    <img src="/assets/am/trump_doral.webp"
+                    <img src="assets/am/trump_doral.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® National Doral, Miami" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg" data-caption="Trump® Tower, Kolkata">
-                    <img src="/assets/am/trump_tower_kolkata.webp"
+                    <img src="assets/am/trump_tower_kolkata.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® Tower, Kolkata" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg"
                     data-caption="40 Wall Street - The Trump® Building, New York">
-                    <img src="/assets/am/40_wall_street.webp"
+                    <img src="assets/am/40_wall_street.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="40 Wall Street - The Trump® Building, New York" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg"
                     data-caption="Trump® International Hotel, Las Vegas">
-                    <img src="/assets/am/trump_international_hotel.webp"
+                    <img src="assets/am/trump_international_hotel.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® International Hotel, Las Vegas" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg"
                     data-caption="Trump® International Hotel and Tower, New York">
-                    <img src="/assets/am/trump_international_hotel_tower.webp"
+                    <img src="assets/am/trump_international_hotel_tower.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® International Hotel and Tower, New York" />
                 </div>
                 <div class="swiper-slide overflow-hidden rounded-lg"
                     data-caption="Trump® International Hotel and Tower , Chicago">
-                    <img src="/assets/am/trump_international_hotel_tower_chicago.webp"
+                    <img src="assets/am/trump_international_hotel_tower_chicago.webp"
                         class="object-cover w-full h-full rounded-[6px]  transition-all duration-700 ease-out"
                         alt="Trump® International Hotel and Tower , Chicago" />
                 </div>
@@ -392,7 +393,7 @@
             <div class="grid lg:grid-cols-12 gap-[50px]">
                 <div class="col-span-4">
                     <div class="flex flex-col lg:justify-between  relative  h-full lg:text-start text-center">
-                        <img src="/assets/common/logo-tribeca.webp" alt="tribeca logo"
+                        <img src="assets/common/logo-tribeca.webp" alt="tribeca logo"
                             class="lg:mb-0 md:mx-[0] mx-auto   w-[200px]  inline-block mb-8" height="54" width="276">
                         <div
                             class="custom-text-gradient uppercase changed-font lg:text-left text-center md:tracking-[2] tracking-[1px] lg:text-[20px]">
@@ -402,12 +403,12 @@
                             <span class="lg:block"></span>
                             Developer
                         </div>
-                        <img src="/assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
+                        <img src="assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
                             class="lg:hidden block absolute  right-[-80px] top-[-140px] opacity-[.4] w-full  w-[38%]">
                     </div>
                 </div>
                 <div class="col-span-4">
-                    <img src="/assets/tribeca_banner.webp" class="rounded-lg" alt="tribeca banner" height="589"
+                    <img src="assets/tribeca_banner.webp" class="rounded-lg" alt="tribeca banner" height="589"
                         width="682">
                 </div>
                 <div class="col-span-4 m-auto">
@@ -443,7 +444,7 @@
 
                 <!-- Image -->
                 <div class="col-span-4">
-                    <img src="/assets/smart_world_banner.webp" class="rounded-md w-full" alt="smart world" height="86"
+                    <img src="assets/smart_world_banner.webp" class="rounded-md w-full" alt="smart world" height="86"
                         width="400">
                 </div>
 
@@ -452,12 +453,11 @@
                     <div class="flex flex-col justify-between h-full relative lg:place-items-end">
 
                         <!-- Background Blob -->
-                        <img src="/trumpresidenceslandingpage-gurgaon/assets/images/circle_blob.webp"
-                            alt="building blob" height="800" width="800"
+                        <img src="assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
                             class="lg:hidden block absolute left-[-80px] top-[-140px] opacity-[.4] w-[38%]">
 
                         <!-- Logo -->
-                        <img src="/assets/common/logo_smart_world.webp" class="lg:w-[300px] w-[200px] lg:mx-[0] mx-auto"
+                        <img src="assets/common/logo_smart_world.webp" class="lg:w-[300px] w-[200px] lg:mx-[0] mx-auto"
                             alt="smart world" height="589" width="300">
 
                         <!-- Text -->
@@ -506,28 +506,28 @@
 
                             <!-- Name -->
                             <div class="mb-5">
-                                <input id="qSenderName" type="text" name="name" placeholder="NAME" value=""
+                                <input id="qSenderNameF" type="text" name="name" placeholder="NAME" value=""
                                     aria-invalid="false"
                                     class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[300] tracking-normal placeholder:text-[var(--primary-color)] placeholder:tracking-[3] border-b-[1px] border-[var(--primary-color)]">
                             </div>
 
                             <!-- Email -->
                             <div class="mb-5">
-                                <input id="qEmailID" type="email" name="email" placeholder="EMAIL ID" value=""
+                                <input id="qEmailIDF" type="email" name="email" placeholder="EMAIL ID" value=""
                                     aria-invalid="false"
                                     class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[300] tracking-normal placeholder:text-[var(--primary-color)] placeholder:tracking-[3] border-b-[1px] border-[var(--primary-color)]">
                             </div>
 
                             <!-- Contact -->
                             <div class="mb-5">
-                                <input id="qMobileNo" type="tel" name="contact" placeholder="CONTACT NO." value=""
+                                <input id="qMobileNoF" type="tel" name="contact" placeholder="CONTACT NO." value=""
                                     aria-invalid="false"
                                     class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[300] tracking-normal placeholder:text-[var(--primary-color)] placeholder:tracking-[3] border-b-[1px] border-[var(--primary-color)]">
                             </div>
 
                             <!-- Message -->
                             <div class="mb-5">
-                                <textarea id="qMessage" name="message" rows="2" placeholder="MESSAGE"
+                                <textarea id="qMessageF" name="message" rows="2" placeholder="MESSAGE"
                                     aria-invalid="false"
                                     class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[300] tracking-normal placeholder:text-[var(--primary-color)] placeholder:tracking-[3] border-b-[1px] border-[var(--primary-color)]"></textarea>
                             </div>
@@ -547,7 +547,7 @@
 
                             <!-- Submit -->
                             <div class="text-center">
-                                <button type="submit" id="SubmitQuery"
+                                <button type="submit" id="SubmitQueryF"
                                     class="mt-10 inline-block px-[40px] text-[12px]  font-[500] tracking-[1px] disabled:opacity-50 text-black py-3 bg-[var(--primary-color)] hover:scale-105 transition-all duration-300">
                                     SUBMIT NOW
                                 </button>
@@ -586,186 +586,14 @@
 
     <a href="#" id="fixed-sms-btn" onclick="event.preventDefault(); openContactModal();"
         class="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border border-white/20 shadow-xl hover:bg-black transition">
-        <img src="/assets/common/email.png" alt="SMS" width="24" height="24" />
+        <img src="assets/common/email.png" alt="SMS" width="24" height="24" />
     </a>
 
     <div id="modal-root" aria-hidden="true"></div>
 
-    <script>
-        const modalRoot = document.getElementById('modal-root');
-        let modalOpen = false;
-
-        function closeModal() {
-            if (!modalRoot) return;
-            modalRoot.innerHTML = '';
-            document.body.style.overflow = '';
-            modalOpen = false;
-        }
-
-        function openModal(contentHtml) {
-            if (!modalRoot) return;
-            closeModal();
-            const overlay = document.createElement('div');
-            overlay.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black px-4';
-            overlay.id = 'page-modal-overlay';
-            overlay.innerHTML = `
-                <div class="bg-[#000]  shadow-xl max-w-[32rem] w-full  border-2 rounded-md border-[#E8C183] p-10 relative transition duration-300 ease-out">
-                    <button type="button" id="modal-close-btn" class="absolute -top-2 -right-2 text-black w-8 h-8 rounded-full bg-[#E8C183] text-2xl">✕</button>
-                    <div class="modal-content text-white">
-                        ${contentHtml}
-                    </div>
-                </div>
-            `;
-            modalRoot.appendChild(overlay);
-            document.body.style.overflow = 'hidden';
-            modalOpen = true;
-
-            overlay.addEventListener('click', function (event) {
-                if (event.target === overlay) {
-                    closeModal();
-                }
-            });
-
-            const closeBtn = overlay.querySelector('#modal-close-btn');
-            if (closeBtn) closeBtn.addEventListener('click', closeModal);
-        }
-
-        function getContactFormHtml() {
-            return `
-                <div class="text-center mb-6">
-                    <img src="/assets/common/logo.webp" class=" w-[8rem] h-auto mx-auto" alt="">
-                    <p class="leading-[normal] pb-[20px] cinzel-uniquifier mt-3 uppercase text-[14px] tracking-[1px] text-whites">Join the Elite – Experience the Trump® Legacy</p>
-                </div>
-                <form id="contact-form" class="space-y-5" novalidate>
-                    <div>
-                        <input id="qSenderNameSubmitQuery" name="name" class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white" type="text" placeholder="NAME" autocomplete="name" />
-                        <p class="mt-1 text-[10px] text-red-500" id="error-name"></p>
-                    </div>
-                    <div>
-                        <input id="qEmailIDSubmitQuery" name="email" class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white" type="email" placeholder="EMAIL ID" autocomplete="email" />
-                        <p class="mt-1 text-[10px] text-red-500" id="error-email"></p>
-                    </div>
-                    <div>
-                        <input id="qMobileNoSubmitQuery" name="contact" class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white" type="tel" placeholder="CONTACT NO." autocomplete="tel" />
-                        <p class="mt-1 text-[10px] text-red-500" id="error-contact"></p>
-                    </div>
-                    <div>
-                        <textarea id="qMessageSubmitQuery" name="message" rows="3" class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white" placeholder="MESSAGE"></textarea>
-                        <p class="mt-1 text-[10px] text-red-500" id="error-message"></p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <input id="agreedCheckbox" checked type="checkbox" name="agreed" class="mt-[3px] cursor-pointer accent-[#E8C183]" />
-                        <label for="agreedCheckbox" class="text-[10px] font-[300] leading-[14px] text-[#C7C7C7]">I authorize company representatives to Call, SMS, Email, or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</label>
-                    </div>
-                    <p class="mt-1 text-[10px] text-red-500" id="error-agreed"></p>
-                    <div class="text-center">
-                        <button type="submit" id="contact-submit-btn" class="mt-6 inline-block px-[40px] text-[12px] bg-[#E8C183] !text-black font-[montserrat] font-[500] tracking-[1px]  border border-[#E8C183] py-3 ">SUBMIT NOW</button>
-                    </div>
-                    <p class="mt-3 text-center text-[12px] text-[#C7C7C7]" id="contact-form-status"></p>
-                </form>
-            `;
-        }
-
-        function getMapHtml() {
-            return `
-                <div class="text-center mb-6">
-                    <h2 class="cinzel-uniquifier text-[24px] uppercase tracking-[4px] mb-4">Location Map</h2>
-                </div>
-                <div class="w-full overflow-hidden rounded-xl">
-                    <img src="/assets/map/map.webp" alt="Trump Residence Gurgaon map" class="w-full h-auto" />
-                </div>
-            `;
-        }
-
-        function openMapModal() {
-            openModal(getMapHtml());
-        }
-
-        function openContactModal() {
-            openModal(getContactFormHtml());
-            const form = document.getElementById('contact-form');
-            if (form) {
-                form.addEventListener('submit', handleContactFormSubmit);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const viewMapBtn = document.getElementById('view-map-btn');
-            const viewMapBtnMobile = document.getElementById('view-map-btn-mobile');
-
-            if (viewMapBtn) {
-                viewMapBtn.addEventListener('click', openMapModal);
-            }
-            if (viewMapBtnMobile) {
-                viewMapBtnMobile.addEventListener('click', openMapModal);
-            }
-        });
-
-        function setFieldError(id, message) {
-            const el = document.getElementById(id);
-            if (el) el.textContent = message;
-        }
-
-        function clearFieldErrors() {
-            ['error-name', 'error-email', 'error-contact', 'error-message', 'error-agreed', 'contact-form-status'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.textContent = '';
-            });
-        }
-
-        async function handleContactFormSubmit(event) {
-            event.preventDefault();
-            clearFieldErrors();
-            const form = event.currentTarget;
-            const name = form.querySelector('[name="name"]').value.trim();
-            const email = form.querySelector('[name="email"]').value.trim();
-            const contact = form.querySelector('[name="contact"]').value.trim();
-            const message = form.querySelector('[name="message"]').value.trim();
-            const agreed = form.querySelector('[name="agreed"]').checked;
-            let isValid = true;
-
-            if (!name) { setFieldError('error-name', 'Name is required'); isValid = false; }
-            if (!email) { setFieldError('error-email', 'Email is required'); isValid = false; }
-            else if (!/\S+@\S+\.\S+/.test(email)) { setFieldError('error-email', 'Invalid email address'); isValid = false; }
-            if (!contact) { setFieldError('error-contact', 'Contact number is required'); isValid = false; }
-            else if (!/^\d{10}$/.test(contact)) { setFieldError('error-contact', 'Invalid contact number'); isValid = false; }
-            if (!message) { setFieldError('error-message', 'Message is required'); isValid = false; }
-            if (!agreed) { setFieldError('error-agreed', 'You must agree to the terms'); isValid = false; }
-            if (!isValid) return;
-
-            const submitBtn = document.getElementById('contact-submit-btn');
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Submitting...';
-            }
-
-            const apiUrl = `https://api2.gtftech.com/AjaxHelper/AgentInstantQuerySetter.aspx?qAgentID=4883&qSenderName=${encodeURIComponent(name)}&qMobileNo=${encodeURIComponent(contact)}&qEmailID=${encodeURIComponent(email)}&qQueryMessage=${encodeURIComponent(message)}&qProjectName=${encodeURIComponent('Trump Residence Gurgaon')}`;
-
-            try {
-                const res = await fetch(apiUrl, { method: 'GET' });
-                if (!res.ok) throw new Error('Failed to submit form');
-                const statusEl = document.getElementById('contact-form-status');
-                if (statusEl) statusEl.textContent = 'Form submitted successfully! Redirecting...';
-                window.location.href = 'thanks.htm';
-            } catch (error) {
-                setFieldError('contact-form-status', error.message || 'Something went wrong');
-            } finally {
-                if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'SUBMIT NOW';
-                }
-            }
-        }
-
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape' && modalOpen) {
-                closeModal();
-            }
-        });
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
 
     <script>
         const lenis = new Lenis({
@@ -783,7 +611,178 @@
     </script>
 
     <!-- custom js -->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        var AgentInfo = {
+            vAgentID: "4883",
+            vProject: "Trump Residence Gurgaon",
+            vURL: "https://www.tribecadevelopers.com/trumpresidenceslandingpage-gurgaon/",
+            thankspageurl: "https://www.tribecadevelopers.com/trumpresidenceslandingpage-gurgaon/thanks.htm",
+        };
+
+        (function loadQueryFormScript() {
+            var versionUpdate = new Date().getTime();
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" + versionUpdate;
+            document.body.appendChild(script);
+        })();
+
+        const modalRoot = document.getElementById('modal-root');
+        let modalOpen = false;
+
+        function closeModal() {
+            if (!modalRoot) return;
+            modalRoot.innerHTML = '';
+            document.body.style.overflow = '';
+            modalOpen = false;
+        }
+
+        function openModal(isMapModal = false) {
+            if (!modalRoot) return;
+            closeModal();
+
+            const overlay = document.createElement('div');
+            overlay.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black px-4';
+            overlay.id = 'page-modal-overlay';
+            
+            let contentHtml = '';
+            let maxWidth = 'max-w-[32rem]';
+            
+            if (isMapModal) {
+                maxWidth = 'max-w-lg';
+                contentHtml = `
+                    <div class="text-center mb-4">
+                        <h2 class="cinzel-uniquifier text-[20px] uppercase tracking-[4px]">Location Map</h2>
+                    </div>
+                    <div class="w-full overflow-hidden rounded-xl">
+                        <img src="assets/map/map.webp" alt="Trump Residence Gurgaon map" class="w-full h-auto max-w-[400px] mx-auto" />
+                    </div>
+                `;
+            } else {
+                contentHtml = `
+                    <div class="text-center mb-3 md:mb-6">
+                        <img src="assets/common/logo.webp" class="w-[6rem] md:w-[8rem] h-auto mx-auto" alt="">
+                        <p class="leading-[normal] pb-[15px] md:pb-[20px] cinzel-uniquifier mt-2 md:mt-3 uppercase text-[12px] md:text-[14px] tracking-[0.5px] md:tracking-[1px] text-whites">Join the Elite – Experience the Trump® Legacy</p>
+                    </div>
+
+                    <div class="space-y-3 md:space-y-5">
+                        <div>
+                            <input id="qSenderNameSubmitQuery" name="name"
+                                class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white"
+                                type="text" placeholder="NAME" autocomplete="name" />
+                        </div>
+                        <div>
+                            <input id="qEmailIDSubmitQuery" name="email"
+                                class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white"
+                                type="email" placeholder="EMAIL ID" autocomplete="email" />
+                        </div>
+                        <div>
+                            <input id="qMobileNoSubmitQuery" name="contact"
+                                class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white"
+                                type="tel" placeholder="CONTACT NO." autocomplete="tel" />
+                        </div>
+                        <div>
+                            <textarea id="qMessageSubmitQuery" name="message" rows="3"
+                                class="w-full bg-[#FFFFFF1A] px-4 py-[10px] text-[12px] font-[montserrat] tracking-normal placeholder:font-[montserrat] placeholder:text-[#E8C183] placeholder:tracking-[3] border-b-[1px] border-[#E8C183] text-white"
+                                placeholder="MESSAGE"></textarea>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input id="agreedCheckbox" checked type="checkbox" name="agreed" class="mt-[3px] cursor-pointer accent-[#E8C183]" />
+                            <label for="agreedCheckbox" class="text-[10px] font-[300] leading-[14px] text-[#C7C7C7]">I authorize company representatives to Call, SMS, Email, or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="SubmitQuery"
+                                class="mt-4 md:mt-6 inline-block px-6 md:px-[40px] text-[11px] md:text-[12px] bg-[#E8C183] !text-black font-[montserrat] font-[500] tracking-[0.5px] md:tracking-[1px] border border-[#E8C183] py-2 md:py-3">
+                                SUBMIT NOW
+                            </button>
+                        </div>
+                        <p class="mt-2 md:mt-3 text-center text-[10px] md:text-[12px] text-[#C7C7C7]" id="contact-form-status"></p>
+                    </div>
+                `;
+            }
+            
+            overlay.innerHTML = `
+            <div class="bg-[#000] shadow-xl ${maxWidth} w-full border-2 rounded-md border-[#E8C183] p-4 md:p-10 relative transition duration-300 ease-out max-h-[90vh]">
+                <button type="button" id="modal-close-btn" class="absolute -top-2 -right-2 text-black w-8 h-8 rounded-full bg-[#E8C183] text-2xl z-50">✕</button>
+                <div class="modal-content text-white overflow-y-auto max-h-[calc(90vh-60px)]">
+                    ${contentHtml}
+                </div>
+            </div>
+            `;
+
+            modalRoot.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+            modalOpen = true;
+
+            // Close on overlay click
+            overlay.addEventListener('click', function (event) {
+                if (event.target === overlay) closeModal();
+            });
+
+            // Close button
+            const closeBtn = overlay.querySelector('#modal-close-btn');
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+            // ── Wire up the API submit button ──
+            $("#SubmitQuery").off("click").on("click", function () {
+                var FormInfo = {
+                    SenderControlID: "qSenderNameSubmitQuery",
+                    SenderControlMobileID: "qMobileNoSubmitQuery",
+                    SenderControlEmailID: "qEmailIDSubmitQuery",
+                    SenderControlMsgID: "qMessageSubmitQuery",
+                };
+                SubmitQueryData(AgentInfo, FormInfo);
+            });
+
+        }
+
+        function openContactModal() {
+            openModal();
+        }
+
+        function openMapModal() {
+            openModal(true);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const viewMapBtn = document.getElementById('view-map-btn');
+            const viewMapBtnMobile = document.getElementById('view-map-btn-mobile');
+
+            if (viewMapBtn) {
+                viewMapBtn.addEventListener('click', openMapModal);
+            }
+            if (viewMapBtnMobile) {
+                viewMapBtnMobile.addEventListener('click', openMapModal);
+            }
+        });
+
+        setTimeout(() => {
+            openModal();
+        }, 6000);
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && modalOpen) closeModal();
+        });
+
+        // footer form
+        $("#SubmitQueryF").off("click").on("click", function () {
+            var FormInfo = {
+                SenderControlID: "qSenderNameF",
+                SenderControlMobileID: "qMobileNoF",
+                SenderControlEmailID: "qEmailIDF",
+                SenderControlMsgID: "qMessageF",
+            };
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+    </script>
+
+
+
 </body>
 
 </html>
