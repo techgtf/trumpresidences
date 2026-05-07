@@ -78,6 +78,19 @@ p {
     .custom_container {
         max-width: 1200px;
     }
+
+    .black_texture_two {
+        background-image: url(https://www.tribecadevelopers.com/trumpresidenceslandingpage-gurgaon/assets/images/tribeca_bg.jpg);
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .black_texture_three {
+        background-image: url(https://www.tribecadevelopers.com/trumpresidenceslandingpage-gurgaon/assets/images/smart_world_bg.jpg);
+        background-size: cover;
+        background-position: 50%;
+    }
+
 }
 
 @media (min-width: 1320px) {
@@ -136,6 +149,8 @@ p {
 .amenitiesSwiper .swiper-slide-next {
     opacity: 0.7;
 }
+
+
 
 @media (max-width:768px) {
     .amenitiesSwiper .swiper-slide {
